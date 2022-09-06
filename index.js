@@ -3,7 +3,7 @@ const app = express();
 var cors = require('cors')
 
 app.use(cors());
-
+console.log("==========>", process.env.DB_PASSWORD)
 const productRoutes = require("./Routes/product")
 const {initializeDatabaseConnection} = require("./Database/initializeDatabaseConnection");
 
